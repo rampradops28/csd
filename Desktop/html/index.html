@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lets play a game</h1>
+    <input type="number" id="num">
+    <button onclick="check()">check</button>
+    <p id="ans"></p>
+    <script>
+        function check(){
+            var a=document.getElementById("num").value;
+            var b= Math.floor(Math.random() * 10)+1;
+            if(a==b)
+            {
+                document.getElementById("ans").textContent= b+"  Correct !!!!";
+            }
+            else{
+                document.getElementById("ans").textContent = b+"  Wrong....!";
+            }
+        }
+    </script>
+</body>
+</html>
